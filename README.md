@@ -27,16 +27,18 @@ Flow:
 ## How to Run
 
 1. Clone the repository:
-git clone <your-repo-url>
+git clone https://github.com/BramBastiaansenNL/Postal-Code-Restaurant-Finder.git
 
 2. Start the backend
 
 -Install dependencies:
-pip install flask flask-cors requests
+'''pip install flask flask-cors requests'''
+
 -Run the server:
-python app.py
+'''python app.py'''
+
 -Backend runs at:
-http://127.0.0.1:5000
+'''http://127.0.0.1:5000'''
 
 3. Start the frontend
 

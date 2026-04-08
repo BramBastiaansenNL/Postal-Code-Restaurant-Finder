@@ -3,8 +3,6 @@ from flask_cors import CORS
 import requests
 
 app = Flask(__name__)
-
-# Pesky proxy workaround
 CORS(app)
 
 @app.route("/restaurants/<postcode>")

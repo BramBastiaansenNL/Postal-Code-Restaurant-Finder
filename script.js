@@ -15,7 +15,7 @@ async function fetchRestaurants() {
         console.log("Fetching postcode:", postcode);
 
         const response = await fetch(
-            `https://corsproxy.io/?https://uk.api.just-eat.io/discovery/uk/restaurants/enriched/bypostcode/${postcode}`
+            `http://127.0.0.1:5000/restaurants/${postcode}`
         );
 
         console.log("Response:", response);

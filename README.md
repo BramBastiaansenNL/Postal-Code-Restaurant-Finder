@@ -28,9 +28,18 @@ git clone <Postal Code Restaurant Finder>
 - This project uses the Just Eat public API
 - Only UK postcodes are supported
 
+## Known Limitations
+
+Due to CORS restrictions, a proxy is used to access the API.
+
+Some postcodes return very large datasets, which may exceed proxy size limits and result in errors.
+
+In a production environment, this would be solved by introducing a backend service to handle API requests.
+
 ## Future Improvements
 
 - Add loading spinner animation
+- Add sorting based on the number of reviews
 - Improve error handling
 - Add more sorting/filter options
 - Enhance UI responsiveness for mobile

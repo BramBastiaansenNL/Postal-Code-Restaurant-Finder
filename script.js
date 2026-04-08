@@ -12,15 +12,21 @@ async function fetchRestaurants() {
     loading.classList.remove("hidden");
 
     try {
+        console.log("Fetching postcode:", postcode);
+
         const response = await fetch(
-            `https://uk.api.just-eat.io/discovery/uk/restaurants/enriched/bypostcode/${postcode}`
+            `https://corsproxy.io/?https://uk.api.just-eat.io/discovery/uk/restaurants/enriched/bypostcode/${postcode}`
         );
+
+        console.log("Response:", response);
 
         if (!response.ok) {
             throw new Error("API error");
         }
 
         const data = await response.json();
+
+        console.log("Data:", data);
 
         let restaurants = data.restaurants;
 
